@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  where-my-frieds
+
+  Created by Den on 10/4/18.
+  Copyright © 2018 Deniss Kaibagarovs. All rights reserved.
+*/
+
+"friends_online" = "Friends Online";
+"vehicle_one" = "vehicle";
+"vehicle_multiple" = "vehicles";

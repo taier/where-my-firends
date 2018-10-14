@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomMapMarker" customModule="where_my_frieds" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="218" height="144"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="quf-45-v7e">
+                    <rect key="frame" x="10" y="10" width="75" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="b1L-PM-Bx8"/>
+                        <constraint firstAttribute="width" constant="75" id="pbI-dY-ZLP"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Toyota RAV4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UjJ-RP-kWB">
+                    <rect key="frame" x="95" y="10" width="113" height="50"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terbates iela 4 Terbates iela 4 Terbates iela 4" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0O-Ab-uYn">
+                    <rect key="frame" x="95" y="70" width="113" height="25"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QrB-GD-eZC">
+                    <rect key="frame" x="10" y="70" width="75" height="25"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="aFa-wh-pMP"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WHm-Sy-PBp">
+                    <rect key="frame" x="78.5" y="104" width="61" height="30"/>
+                    <state key="normal" title="Navigate">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonNavigate:" destination="iN0-l3-epB" eventType="touchUpInside" id="yhg-eN-qcj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.058823529409999999" green="0.28235294119999998" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="quf-45-v7e" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="0h3-9e-Fdu"/>
+                <constraint firstItem="n0O-Ab-uYn" firstAttribute="top" secondItem="QrB-GD-eZC" secondAttribute="top" id="2ho-a9-vGQ"/>
+                <constraint firstItem="QrB-GD-eZC" firstAttribute="trailing" secondItem="quf-45-v7e" secondAttribute="trailing" id="4Ei-Ig-s75"/>
+                <constraint firstItem="n0O-Ab-uYn" firstAttribute="bottom" secondItem="QrB-GD-eZC" secondAttribute="bottom" id="6Nv-zt-fEk"/>
+                <constraint firstItem="UjJ-RP-kWB" firstAttribute="bottom" secondItem="quf-45-v7e" secondAttribute="bottom" id="7lR-rC-RT5"/>
+                <constraint firstItem="UjJ-RP-kWB" firstAttribute="leading" secondItem="quf-45-v7e" secondAttribute="trailing" constant="10" id="J7y-VO-JOy"/>
+                <constraint firstItem="UjJ-RP-kWB" firstAttribute="top" secondItem="quf-45-v7e" secondAttribute="top" id="KTQ-2E-UJC"/>
+                <constraint firstItem="QrB-GD-eZC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Uwc-Rk-bEH"/>
+                <constraint firstItem="quf-45-v7e" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="VZd-Wy-xFv"/>
+                <constraint firstItem="n0O-Ab-uYn" firstAttribute="leading" secondItem="QrB-GD-eZC" secondAttribute="trailing" constant="10" id="aFp-gD-Jvd"/>
+                <constraint firstAttribute="trailing" secondItem="UjJ-RP-kWB" secondAttribute="trailing" constant="10" id="bAo-LW-33l"/>
+                <constraint firstItem="QrB-GD-eZC" firstAttribute="top" secondItem="quf-45-v7e" secondAttribute="bottom" constant="10" id="or0-R3-d2f"/>
+                <constraint firstItem="WHm-Sy-PBp" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="rpH-ra-5DM"/>
+                <constraint firstAttribute="bottom" secondItem="WHm-Sy-PBp" secondAttribute="bottom" constant="10" id="tAV-Eg-jCs"/>
+                <constraint firstAttribute="trailing" secondItem="n0O-Ab-uYn" secondAttribute="trailing" constant="10" id="yI3-am-kCt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iboImgViewVehicle" destination="quf-45-v7e" id="rak-Mz-cFh"/>
+                <outlet property="iboLabelVehicleAddress" destination="n0O-Ab-uYn" id="Vrh-cY-Irh"/>
+                <outlet property="iboLabelVehicleName" destination="UjJ-RP-kWB" id="eQz-Eb-NYd"/>
+                <outlet property="iboViewColor" destination="QrB-GD-eZC" id="ZBK-Mz-HaT"/>
+            </connections>
+            <point key="canvasLocation" x="128" y="-205.09745127436284"/>
+        </view>
+    </objects>
+</document>
